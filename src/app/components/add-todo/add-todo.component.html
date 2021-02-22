@@ -1,0 +1,6 @@
+<mat-card class="mat-elevation-z0 no-gutter" >
+    <mat-form-field custom-style>
+        <input matInput type="text" [(ngModel)]="todoInput" (ngModelChange)="onChange(this)">
+        <button mat-flat-button color="primary" (click)="addNewItem($event) ">Add</button>
+    </mat-form-field> 
+</mat-card>

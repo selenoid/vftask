@@ -1,0 +1,21 @@
+mat-card {
+  &.no-gutter {
+    padding:0;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  mat-form-field {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: calc(100% - 84px);
+      padding: 8px 10px;
+      margin-right:20px;
+      border: 1px solid;
+      border-color: #0000001f;;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<mat-list>
+    <mat-list-item *ngFor="let todo of todos" data-todoId="todo.id">
+        <mat-checkbox color="primary"  [checked]="(todo.status == 'true')" (change)="changeStatus(todo.id, $event)"></mat-checkbox>
+        <input class="todo-text" [ngClass]="{'done': todo.status === 'true'}" readonly="true" value={{todo.name}}>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="onItemDelete(todo.id)">delete</mat-icon>
+    </mat-list-item>
+</mat-list>

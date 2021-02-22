@@ -1,0 +1,16 @@
+input.todo-text {
+  &.done {
+    text-decoration: line-through;
+  }
+  border: 0 none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+mat-icon{
+  cursor: pointer;
+}
+
+mat-list-item + mat-list-item {
+  border-top: 1px solid #ccc;
+}

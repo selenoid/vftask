@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* CUSTOM GLOBAL OVERRIDES */
+.mat-form-field-wrapper{
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 100% !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent
+.mat-checkbox-background {
+  //@debug: #ff4081;
+  //background-color: #2755d4;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  height: 0px!important;
+}

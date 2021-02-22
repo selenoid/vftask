@@ -1,0 +1,11 @@
+<div style="padding: 13px;">
+    <h4>ToDo List</h4>
+    <!-- <mat-spinner *ngIf="todos.length === 0"></mat-spinner> -->
+    <app-add-todo
+        [todoInput]="todoInput"
+        (newTodoEvent)="addItem($event)"></app-add-todo>
+    <app-todo-list
+    (deleteItemEvent)="deleteItem($event)"
+    (changeStatusEvent)="setStatus($event)"
+    [todos]="todos"></app-todo-list>
+</div>
